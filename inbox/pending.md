@@ -4,6 +4,20 @@
 
 ---
 
+### 2026-09-21 01:28 ソル
+- 種別: 報告
+- 緊急: 低
+- 内容:
+  - 区切り: 2
+  - 実装: 「保存したデータから再開する」→ ZIP選択＋「読み込み」／order.json＋images/ を復元して編集ハブへ。失敗時は短いエラー（黙って空復元しない）。再ZIP用に zipImageFiles 保持。help 未変更。区切り3未着手
+  - リポ: ポートフォリオ
+  - commit: c99b411
+  - 確認: テストZIPで店名・キャッチ文・hero/about画像が戻りハブ表示。壊れたZIPはエラー表示のままゲート維持
+  - 次: 指示待ち
+- 関連パス: sample-1man/index.html, sample-1man/script.js, sample-1man/sample-overrides.css
+
+---
+
 ### 2026-09-21 01:14 ソル
 - 種別: 報告
 - 緊急: 低
