@@ -4,6 +4,25 @@
 
 ---
 
+### 2026-09-22 02:09 ソル
+- 種別: 報告
+- 緊急: 低
+- 内容:
+  - 実装: 文章部品辞典最小骨格＋生成接続（UI大改修なし）
+  - hash: `4ff6fd8`（基準 `646e947` の次）
+  - スキーマパス: `sample-1man/copy-dict/`（meta / presets / scenes）＋ `copy-dict-engine.js` → `Sample1manCopyDict`
+  - scene接続: `sushiSampleKey` 先頭トークン（例 cafe-warm-a → cafe）。欠損は cafe フォールバック。`inn`→hotel
+  - シード: scenes 15／部品合計 約1580（sceneあたり厚め。次フェーズで品質刈り可）
+  - 通し:
+    - 同オリジン `/copy-dict/meta.json` 200
+    - ブラウザ内 API: キーワード calm→ease 先頭／bright+craft→軸変化／3案 axis 重複なし／文末「寄り」スタブなし
+    - おまかせ: preset axes が各枠先頭軸に一致（例 flow-bright）
+    - UI: 入口→寿司まで到達・候補に残す確認。決め方2択〜枠UIの全クリック通しはレーン座標都合でAPI通し優先（次指示で人手通し可）
+  - kuru-hub: `9b3eba3`（docs セット製本）
+  - 次: 指示待ち（scene厚み／品質チューニング）
+- 関連パス: sample-1man/copy-dict/, sample-1man/copy-dict-engine.js, sample-1man/script.js, docs/進行中/2026-09-22-寿司後文章工程UI骨格-スタブ.md
+
+---
 ### 2026-09-21 23:22 ソル
 - 種別: 報告
 - 緊急: 低
