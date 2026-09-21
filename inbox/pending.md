@@ -1,9 +1,23 @@
-# pending（未回答）
+﻿# pending（未回答）
 
 新しいものを上に追記する。
 
 ---
 
+### 2026-09-21 18:27 ソル
+- 種別: 報告
+- 緊急: 低
+- 内容:
+  - **フェーズ: お客様向け文言基準の正式仕様化**
+  - portfolio commit: `fed03b7`（docs: add customer-facing copy standard）
+  - kuru-hub commit: `ae85290`（docs sync）／`8c77b8d`（ソル運用）／`893446e`（manifest+p/customer-copy・tip-mark）
+  - 正本パス: `docs/確定/2026-09-21-お客様向け文言基準.md`
+  - 実施: 正本作成（A〜N）／README・運用ボード・導線・簡単原則リンク／.cursor/rules/customer-facing-copy.mdc／文言監査を再開待ち接続／kuru-hub同期
+  - やっていないこと: UI一斉置換・生成ロジック改修・エラー文全置換なし
+  - 次: 指示待ち（自動生成や文言監査再開は別指示）
+- 関連パス: docs/確定/2026-09-21-お客様向け文言基準.md
+
+---
 ### 2026-09-21 15:50 ソル
 - 種別: 報告
 - 緊急: 低
