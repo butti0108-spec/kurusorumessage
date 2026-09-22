@@ -1,10 +1,27 @@
-﻿# pending（未回答）
+# pending（未回答）
 
 新しいものを上に追記する。
 
 ---
 
-### 2026-09-22 18:25 ソル
+### 2026-09-22 19:05 ソル
+- 種別: 報告
+- 緊急: 低
+- 内容:
+  - 実装: **フェーズ3完了／次指示待ち**（虹の封じ込め）
+  - hash: `b3eaad8`（基準 `44369b3`）
+  - 直した点:
+    1. 根 `style.css`／`sample-1man/style.css`: 虹 `::before/::after`＋`heroRainbow` を `.hero-stage--rainbow` のみに限定
+    2. 正面 `index.html` キャッチに `hero-stage--rainbow` を1箇所付与
+    3. 保険: `sample-overrides` で `.preview-site .hero-stage` の疑似要素を強制オフ
+  - 通し:
+    1. ポートフォリオ正面: `hero-stage--rainbow` で `animation: heroRainbow` あり
+    2. メーカー見本キャッチ: `hasRainbow=false`／疑似要素 `content:none`・`animation:none`
+  - 触らない: フェーズ4親CSS切断／メーカー本線JS／kuru-hub
+  - 次: 指示待ち（フェーズ4に進まない）
+- 関連パス: style.css, index.html, sample-1man/style.css, sample-1man/sample-overrides.css, sample-1man/index.html
+
+---### 2026-09-22 18:25 ソル
 - 種別: 報告
 - 緊急: 低
 - 内容:
