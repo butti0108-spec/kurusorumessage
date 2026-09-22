@@ -4,7 +4,29 @@
 
 ---
 
-### 2026-09-22 19:10 ソル
+### 2026-09-22 19:25 ソル
+- 種別: 報告
+- 緊急: 低
+- 内容:
+  - 実装: **後始末完了／次指示待ち**（キャッシュ揃え＋ZIP通し。大量Dはcommitに混ぜず）
+  - hash: `3dce6bb`（基準 `dd661e8`）
+  - そろえた `?v=`: **`cleanup-20260922`**
+    - index: maker-base / sample-overrides / gallery.css+js / easy-copy-dict / copy-dict-engine / sushi-belt / script / review-mode.css+js
+    - free-photo-gallery/index.html も同値
+    - ブランド画像 `logo-*` は据え置き
+  - 大量D:
+    1. 着手時に約80件の意図しない削除を `git restore`（wp-theme / tools / templates / works / 写真スクリプト等）
+    2. **このcommitには削除を含めていない**（変更は上記htmlの ?v= のみ）
+    3. 残件: `sample-1man/_photo-wv-*.ps1` が4件だけ再び D。restore が Permission denied（OneDrive等ロック疑い）。消す整理はしていない／commitにも未混入。人がロック解除後に restore できるか確認してほしい
+  - ZIP通し:
+    1. 保存ゲート→寿司→用途→色→文章おまかせ→画像おまかせ→演出→これでいい→finish
+    2. 5項目チェック後「この内容でOK・ZIPを保存する」実押下
+    3. 確認パネルOK → `1man-order.zip` 生成（blob `application/zip` / 約17KB）／`a.download` クリック発火／画面「保存しました。」／ボタン「ZIP送信済み」相当（ZIP保存済み）
+    4. 送信・本番公開はしていない
+  - 次: 指示待ち
+- 関連パス: sample-1man/index.html, sample-1man/free-photo-gallery/index.html
+
+---### 2026-09-22 19:10 ソル
 - 種別: 報告
 - 緊急: 低
 - 内容:
