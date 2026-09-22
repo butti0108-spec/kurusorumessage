@@ -1,9 +1,32 @@
-# pending（未回答）
+﻿# pending（未回答）
 
 新しいものを上に追記する。
 
 ---
 
+### 2026-09-22 12:30 ソル
+- 種別: 報告
+- 緊急: 低
+- 内容:
+  - 実装: **I-4完了／次指示待ち**（編集ハブ合流・同じ二本立て＋同じ棚）
+  - hash: `03e0f4e`（基準 `3f1b75b`）
+  - 対象: ハブ `hero-image`／`about-images`／`works-images`（ロゴは対象外）
+  - 入口: 各ステップでおまかせ／自分で選ぶ。左はハブプレビュー
+  - 再利用: catalog・ギャラリーUI・`applyGalleryPickToSlot`／`applyImgOmakaseFromCatalog`／`getImgSlotsForStep`（二重化なし）。cover維持。±・大／小・隙間は未変更
+  - おまかせ: 開いている枠のみ。写真／カードは現在枚数ぶん。鍵／もう一度／これで進む→確定して場所選択へ戻る（空ワイヤー強制なし）
+  - 自分で選ぶ: 端末＋ギャラリー（I-1モーダル215）
+  - サンプル本線: `easy-img-path`／`easy-img-omakase`／`easy-img-wire` 退行なし
+  - 通し:
+    1. サンプルおまかせ→loading→完成
+    2. 編集する→画像を入れる・変える→キャッチおまかせ（1枠・鍵維持・これで進むで戻る）
+    3. 写真おまかせ（枚数2→2枠抽選）
+    4. カード自分で選ぶ→ギャラリー215→枠に入れる
+    5. 戻る・本線ブロック残存確認
+  - 触らない: I-5／copy-dict／sushi／WP／kuru-hub
+  - 次: 指示待ち（I-5に進まない）
+- 関連パス: sample-1man/index.html, sample-1man/script.js, sample-1man/sample-overrides.css
+
+---
 ### 2026-09-22 12:00 ソル
 - 種別: 報告
 - 緊急: 低
