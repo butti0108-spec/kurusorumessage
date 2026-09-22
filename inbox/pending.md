@@ -4,6 +4,26 @@
 
 ---
 
+### 2026-09-22 12:45 ソル
+- 種別: 報告
+- 緊急: 低
+- 内容:
+  - 実装: **I-5完了／画像計画ここまで。次指示待ち**（trim-card／カード上寄せ）
+  - hash: `2d397e0`（基準 `03e0f4e`）
+  - 種: **12件**（`trim-card/<scene>/work-01.jpg`。上72%クロップ。全件量産なし）
+  - catalog: 任意 `trimCardPath`＋タグ `card-upper`。shapeラベル「ふつう・半幅向け」。v2
+  - はめ込み: カード枠は trim 優先／無ければ path＋cover＋`center top`。キャッチ／about は trim 非適用
+  - おまかせ: カード枠だけ trim ありを軽く優先（同一 `pickCatalogPhoto`）
+  - UI: 「上寄せ種だけ」チェック。形ラベル更新
+  - 通し:
+    1. ギャラリー単体: 215→上寄せ種だけ12
+    2. ハブカード: trimあり→`trim-card/...`／なし→`ai-or-original/...`＋cover・上寄せ
+    3. おまかせカード→trim優先／キャッチおまかせ→trim不使用
+  - 触らない: sushi／copy-dict／WP／kuru-hub／全件トリム
+  - 次: 指示待ち（勝手に次線へ行かない）
+- 関連パス: sample-1man/free-photo-gallery/*, sample-1man/script.js, sample-1man/sample-overrides.css, sample-1man/index.html
+
+---
 ### 2026-09-22 12:30 ソル
 - 種別: 報告
 - 緊急: 低
