@@ -4,6 +4,28 @@
 
 ---
 
+### 2026-09-22 09:22 ソル
+- 種別: 報告
+- 緊急: 低
+- 内容:
+  - 実装: 文章辞典・品質掃除＋用途優先の scene Narrow（1本完走）
+  - hash: `a32741f`（基準 `4ff6fd8`）
+  - 汚染掃除: 業種マーカー不一致の mat_* を正しい scene へ **MOVE 約59件**（初回55＋手直し florist/salon/bakery/cafe）。gen_* は維持。水増しなし
+  - 用途→scene（`meta.purposeScenes`）:
+    - personal → studio
+    - company → cowork
+    - shop → null（見本 `sushiSampleKey` 先頭を足場）
+    - works → gallery
+    - service → salon
+  - 優先: 用途マップあり → 見本ヒント → cafe フォールバック。キーワードは axis 絞り（見本ロック禁止）
+  - 通し:
+    1. キーワード: 寿司→用途(shop)→色→キーワード→方向→基本情報→枠3案＋ガチャ→画像まで到達。axis重複なし／スタブ「／xx寄り」なし
+    2. おまかせ: APIで preset 軸一致・cafe scene。service 上書きで salon、カフェ固有語（ラテ等）張り付きなし
+    3. 戻る・ガチャ・未選択次へ（ステータス注意）も軽く確認
+  - 次: 指示待ち（リンク表示等の個別直しは全体設計後）
+- 関連パス: sample-1man/copy-dict/, sample-1man/copy-dict-engine.js, sample-1man/script.js, sample-1man/index.html
+
+---
 ### 2026-09-22 02:09 ソル
 - 種別: 報告
 - 緊急: 低
