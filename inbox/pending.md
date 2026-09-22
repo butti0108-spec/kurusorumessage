@@ -4,6 +4,27 @@
 
 ---
 
+### 2026-09-22 12:00 ソル
+- 種別: 報告
+- 緊急: 低
+- 内容:
+  - 実装: **I-3完了／次指示待ち**（画像おまかせ Coolors型）
+  - hash: `3f1b75b`（基準 `96282a4`）
+  - 骨格: `easy-img-omakase` を文章おまかせと同型（左プレビュー＋もう一度／枠鍵／これで進む）。スタブ廃止
+  - 抽選: catalog 215件。枠＝キャッチ／写真／カード。形優先（hero→wide、他→square、足りなければ全体）。同一フロー内ID重複回避（枯れたら緩和）
+  - これで進む: ギャラリー選びと同じ `applyGalleryPickToSlot` で確定 → **ワイヤーを飛ばして** `easy-loading`
+  - 自分で選ぶ: `easy-img-wire`＋ギャラリー／端末は維持
+  - 入口文言: 「案内のみ」削除
+  - 通し:
+    1. 2択→自分で選ぶ→wire＋ギャラリーあり
+    2. おまかせ→初回3枠＋左cover反映／later-hintなし
+    3. キャッチ鍵→もう一度→鍵維持・他枠変化・3IDユニーク
+    4. これで進む→作成演出
+  - 触らない: I-4／I-5／copy-dict／sushi／WP／kuru-hub
+  - 次: 指示待ち
+- 関連パス: sample-1man/index.html, sample-1man/script.js, sample-1man/sample-overrides.css
+
+---
 ### 2026-09-22 11:45 ソル
 - 種別: 報告
 - 緊急: 低
