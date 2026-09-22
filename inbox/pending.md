@@ -1,9 +1,23 @@
-﻿# pending（未回答）
+# pending（未回答）
 
 新しいものを上に追記する。
 
 ---
 
+### 2026-09-22 11:15 ソル
+- 種別: 報告
+- 緊急: 低
+- 内容:
+  - 実装: 本番WPアニメ同期（静的ポートフォリオへ）※I-1着手前に完走
+  - hash: `e5d93bb`（基準 `ddef9b9`）
+  - 虹: `.hero-stage` の ::before/::after＋`heroRainbow`／heroFadeUp／heroValueRise
+  - reveal: `data-reveal-group`／IntersectionObserver／アコーディオン開閉 `accordionIn`
+  - 通し: ローカル5501で虹レイヤ動作確認／スクロールで About〜Works reveal／本番 ai-shin-ka.com と見比べ
+  - 触らない: 本番WPアップロードなし／kuru-hubなし
+  - 次: I-1（ギャラリー棚）へ進む
+- 関連パス: index.html, style.css, script.js
+
+---
 ### 2026-09-22 10:35 ソル
 - 種別: 報告
 - 緊急: 低
