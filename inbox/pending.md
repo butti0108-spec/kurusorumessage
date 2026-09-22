@@ -4,7 +4,26 @@
 
 ---
 
-### 2026-09-22 19:05 ソル
+### 2026-09-22 19:10 ソル
+- 種別: 報告
+- 緊急: 低
+- 内容:
+  - 実装: **フェーズ4完了／次指示待ち**（親CSSバリケード）
+  - hash: `dd661e8`（基準 `b3eaad8`）
+  - 直した点:
+    1. `sample-1man/index.html` から `../style.css` を削除
+    2. メーカー親 `maker-base.css`（旧 style.css を改名・虹DNA削除）をローカルのみで読む
+    3. `PUBLISH.md`／`_static-server.js` を「親はメーカー内」に更新
+  - 通し:
+    1. メーカースタイルシート: `maker-base` のみ（親 `style.css` なし）
+    2. 見本プレビュー表示OK（ヒーロー約1182x660・屋号見える）／虹疑似要素なし
+    3. ポートフォリオ正面: `heroRainbow` 継続
+  - 欠けメモ（勝手に次フェーズにしない）: overrides が親前提の上書きは現状で破綻なし。細かい白抜けが出たら別指示でメーカー親側へ寄せる
+  - 触らない: 新機能／kuru-hub／フェーズ5
+  - 次: 指示待ち
+- 関連パス: sample-1man/maker-base.css, sample-1man/index.html, sample-1man/PUBLISH.md, sample-1man/_static-server.js
+
+---### 2026-09-22 19:05 ソル
 - 種別: 報告
 - 緊急: 低
 - 内容:
