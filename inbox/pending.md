@@ -4,6 +4,27 @@
 
 ---
 
+### 2026-09-22 11:30 ソル
+- 種別: 報告
+- 緊急: 低
+- 内容:
+  - 実装: **I-1完了／次指示待ち**（ギャラリー棚の最小本番化）
+  - hash: `1095fb2`（基準 `e5d93bb`。直前にアニメ同期 pending `6db9aaf` も完走）
+  - カタログ: **215件**（`ai-or-original/`、`color-insert`除外）
+  - タグ一覧: person / hand / food / drink / indoor / scenery / nature / animal（JPラベルあり）
+  - shape: wide=30 / square=185
+  - 粗いタグ: scene名からの一次付与。迷いは `indoor` 寄せ。`hand` は現状0件（チェックすると0件空表示）
+  - 開き方: サンプル本線の画像ステップ（`easy-img-wire`）→ 各枠の **「ギャラリーから選ぶ」**（端末ファイル選択は残置）
+  - 単独URL: `sample-1man/free-photo-gallery/`
+  - 通し:
+    1. ギャラリー単体: 215表示／animal=15／hand=0＋空文言／clear／wide=30／選択で「選んだ」
+    2. メーカー: モーダル215→絞り込み→枠に入れる→status「ギャラリーから選びました」／hero `object-fit: cover`
+    3. 閉じる・端末選択ボタン残存・about枠でも再オープン確認
+  - 作らないもの: Coolorsおまかせ／二本立て／sushi差し替え／WP公開／kuru-hub／I-2
+  - 次: 指示待ち
+- 関連パス: sample-1man/free-photo-gallery/*, sample-1man/index.html, sample-1man/script.js, sample-1man/sample-overrides.css
+
+---
 ### 2026-09-22 11:15 ソル
 - 種別: 報告
 - 緊急: 低
