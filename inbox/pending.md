@@ -4,6 +4,27 @@
 
 ---
 
+### 2026-09-22 10:35 ソル
+- 種別: 報告
+- 緊急: 低
+- 内容:
+  - 実装: copy-dict 拡充＋同一条件でも回すたびに違う（1本完走）
+  - hash: `ddef9b9`（基準 `a9ff823`）
+  - 追加: **+672** 部品（scene別ざっくり +40〜46。gallery/hotel +40、他は +44〜46）
+  - 穴: 全15 scene で主要6軸×open/mid/close が各3以上に到達（着手時は全 scene で `bright:mid`/`bright:close`=0）
+  - まだ薄い: works/contact **専用**マスで空が約113残（例 contact:warm:open、works:craft:open）。軸全体の穴は埋めた。次厚みで可
+  - 仕組み: `freshSalt`（日時+tick）を生成ごと必須／`sessionUsedPartIds` で制作中の部品IDを優先回避（枯れたら緩和）／フロー開始で reset。おまかせ再抽選・キーワードガチャも同じ経路
+  - 通し:
+    1. 同一条件ガチャ4回 → 文言セット unique=4（張り付きなし）。API5回も first候補すべて不一致
+    2. 3案 axis 重複なし
+    3. cafe vs service→salon: scene切替OK。明らかな業種裏切りの増殖なし（cafe内の旧 florist 残渣は既存。今回の追加は業種別フレーバー）
+    4. 共通1行・Coolors鍵維持（鍵hero維持／未鍵変化／これで進む）
+  - kuru-hub: なし
+  - 次: 指示待ち
+- 関連パス: sample-1man/copy-dict/scenes/, sample-1man/copy-dict-engine.js, sample-1man/script.js, sample-1man/index.html, tools/copy-dict-fill-holes-*, docs/進行中/2026-09-22-寿司後文章工程UI骨格-スタブ.md
+
+---
+
 ### 2026-09-22 09:45 ソル
 - 種別: 報告
 - 緊急: 低
